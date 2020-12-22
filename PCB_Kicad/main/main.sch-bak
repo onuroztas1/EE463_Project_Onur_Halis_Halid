@@ -1,0 +1,251 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:LT1074HV U1
+U 1 1 5FE119B4
+P 3100 1300
+F 0 "U1" H 3500 1515 50  0000 C CNN
+F 1 "LT1074HV" H 3500 1424 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-5_P3.4x3.7mm_StaggerOdd_Lead3.8mm_Vertical" H 3500 1333 50  0000 C CNN
+F 3 "" H 3100 1300 50  0001 C CNN
+	1    3100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5FE13553
+P 4550 1400
+F 0 "L1" H 4550 1705 50  0000 C CNN
+F 1 "100uH" H 4550 1614 50  0000 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H8mm" H 4550 1523 50  0000 C CNN
+F 3 "PA4310.104NLT" H 4550 1400 50  0001 C CNN
+	1    4550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C1
+U 1 1 5FE15D02
+P 5350 1650
+F 0 "C1" H 5528 1696 50  0000 L CNN
+F 1 "470uF" H 5528 1605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" H 5350 1650 50  0001 C CNN
+F 3 "UKL1J471KHD" H 5350 1650 50  0001 C CNN
+	1    5350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J_Battery1
+U 1 1 5FE19FDA
+P 7750 1400
+F 0 "J_Battery1" H 7778 1376 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 7778 1285 50  0000 L CNN
+F 2 "" H 7750 1400 50  0001 C CNN
+F 3 "~" H 7750 1400 50  0001 C CNN
+	1    7750 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FE1BED1
+P 7100 3000
+F 0 "R1" H 7170 3046 50  0000 L CNN
+F 1 "10k" H 7170 2955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7030 3000 50  0001 C CNN
+F 3 "~" H 7100 3000 50  0001 C CNN
+	1    7100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FE1D649
+P 6650 3350
+F 0 "R2" V 6443 3350 50  0000 C CNN
+F 1 "100k" V 6534 3350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6580 3350 50  0001 C CNN
+F 3 "~" H 6650 3350 50  0001 C CNN
+	1    6650 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:0 #GND0101
+U 1 1 5FE1E1ED
+P 7100 3600
+F 0 "#GND0101" H 7100 3500 50  0001 C CNN
+F 1 "0" H 7100 3689 50  0000 C CNN
+F 2 "" H 7100 3600 50  0001 C CNN
+F 3 "~" H 7100 3600 50  0001 C CNN
+	1    7100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2700 7100 2850
+Wire Wire Line
+	6800 3350 6900 3350
+Wire Wire Line
+	6900 3350 6900 2700
+Connection ~ 6900 2700
+Wire Wire Line
+	6900 2700 7100 2700
+Wire Wire Line
+	6500 3350 6100 3350
+Wire Wire Line
+	6100 3350 6100 2600
+Wire Wire Line
+	3900 1500 4150 1500
+Wire Wire Line
+	4150 1500 4150 2600
+Wire Wire Line
+	4150 2600 6100 2600
+Connection ~ 6100 2600
+Wire Wire Line
+	4800 1400 5350 1400
+Wire Wire Line
+	4300 1400 3900 1400
+Wire Wire Line
+	7100 3150 7100 3600
+Wire Wire Line
+	5350 1400 7550 1400
+Connection ~ 5350 1400
+$Comp
+L pspice:0 #GND0102
+U 1 1 5FE211FA
+P 7500 2300
+F 0 "#GND0102" H 7500 2200 50  0001 C CNN
+F 1 "0" H 7500 2389 50  0000 C CNN
+F 2 "" H 7500 2300 50  0001 C CNN
+F 3 "~" H 7500 2300 50  0001 C CNN
+	1    7500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R_sense1
+U 1 1 5FE21BAD
+P 7500 1900
+F 0 "R_sense1" H 7570 1946 50  0000 L CNN
+F 1 "0.1R" H 7570 1855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7430 1900 50  0001 C CNN
+F 3 "~" H 7500 1900 50  0001 C CNN
+	1    7500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2250 7500 2200
+Wire Wire Line
+	7500 1750 7500 1650
+Wire Wire Line
+	7500 1500 7550 1500
+Wire Wire Line
+	5350 1900 5350 2200
+Wire Wire Line
+	5350 2200 6500 2200
+Connection ~ 7500 2200
+Wire Wire Line
+	7500 2200 7500 2050
+Wire Wire Line
+	7050 2500 7050 1650
+Wire Wire Line
+	7050 1650 7500 1650
+Connection ~ 7500 1650
+Wire Wire Line
+	7500 1650 7500 1500
+$Comp
+L Device:R R3
+U 1 1 5FE23753
+P 3600 2150
+F 0 "R3" H 3670 2196 50  0000 L CNN
+F 1 "2.7k" H 3670 2105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3530 2150 50  0001 C CNN
+F 3 "~" H 3600 2150 50  0001 C CNN
+	1    3600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C2
+U 1 1 5FE23DA6
+P 3600 2700
+F 0 "C2" H 3778 2746 50  0000 L CNN
+F 1 "100nf" H 3778 2655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 3600 2700 50  0001 C CNN
+F 3 "FA26C0G2A104JRU06" H 3600 2700 50  0001 C CNN
+	1    3600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND0103
+U 1 1 5FE2467F
+P 3450 3250
+F 0 "#GND0103" H 3450 3150 50  0001 C CNN
+F 1 "0" H 3450 3339 50  0000 C CNN
+F 2 "" H 3450 3250 50  0001 C CNN
+F 3 "~" H 3450 3250 50  0001 C CNN
+	1    3450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1850 3350 1900
+Wire Wire Line
+	3350 3050 3450 3050
+Wire Wire Line
+	3450 3050 3450 3250
+Wire Wire Line
+	3600 2950 3600 3050
+Wire Wire Line
+	3600 3050 3450 3050
+Connection ~ 3450 3050
+Wire Wire Line
+	3600 2450 3600 2300
+Wire Wire Line
+	3600 2000 3600 1850
+Text GLabel 1950 1400 0    50   Input ~ 0
+V_in
+Wire Wire Line
+	1950 1400 3100 1400
+Wire Wire Line
+	3050 1500 3050 1900
+Wire Wire Line
+	3050 1900 3350 1900
+Connection ~ 3350 1900
+Wire Wire Line
+	3350 1900 3350 3050
+Wire Wire Line
+	3100 1500 3050 1500
+$Comp
+L LT1006:LT1006 X1
+U 1 1 5FE2C15F
+P 6500 3000
+F 0 "X1" H 6650 2250 50  0000 C CNN
+F 1 "LT1006" H 6501 2310 50  0000 C CNN
+F 2 "LT1006:S8" H 6500 3000 50  0000 L BNN
+F 3 "" H 6500 3000 50  0001 L BNN
+	1    6500 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 2500 7050 2500
+Wire Wire Line
+	6700 2700 6900 2700
+Wire Wire Line
+	6100 2600 6300 2600
+Text GLabel 6500 3000 3    50   Input ~ 0
++24v
+Wire Wire Line
+	6500 3000 6500 2800
+Connection ~ 6500 2200
+Wire Wire Line
+	6500 2200 7500 2200
+Wire Wire Line
+	6500 2400 6500 2200
+$EndSCHEMATC
