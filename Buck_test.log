@@ -1,0 +1,27 @@
+Circuit: * C:\Users\karab\OneDrive\Documents\GitHub\EE463_Project_Onur_Halis_Halid\Buck_test.asc
+
+Per .tran options, skipping operating point for transient analysis.
+Heightened Def Con from 0.00487716 to 0.00487716
+Heightened Def Con from 0.0166272 to 0.0166272
+Heightened Def Con from 0.0210272 to 0.0210272
+Heightened Def Con from 0.0243022 to 0.0243022
+Heightened Def Con from 0.0243772 to 0.0243772
+Heightened Def Con from 0.0247274 to 0.0247274
+
+Date: Mon Dec 28 21:14:39 2020
+Total elapsed time: 7.330 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 1935936
+traniter = 1935936
+tranpoints = 541151
+accept = 396426
+rejected = 144731
+matrix size = 31
+fillins = 2
+solver = Normal
+Matrix Compiler1: 1.40 KB object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 2.22 KB object code size  0.1/0.2/[0.1]
+

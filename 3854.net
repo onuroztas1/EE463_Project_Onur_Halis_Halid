@@ -1,0 +1,33 @@
+* C:\Users\karab\OneDrive\Documents\GitHub\EE463_Project_Onur_Halis_Halid\3854.asc
+M§Q1 N001 N006 N008 N008 IPP200N25N3
+L1 N008 N009 100µ Rser=5.8m
+C1 N009 0 1m Rser=4.5m
+C2 N002 0 4.7µ
+C3 N003 0 .002µ
+V1 IN 0 24
+D1 IN N004 RF01VM2S
+M§Q2 N008 N011 0 0 IPP200N25N3
+C5 N005 0 2200p Rser=15K Cpar=100p
+XU1 N007 N005 N003 N004 N006 N008 0 N011 N002 IN 0 0 LTC3854
+C6 N004 N008 1µ
+V2 N001 0 250
+E§ACS70331EESATR-2P5B3 N007 0 N013 0 4
+R3 N013 0 0.1
+R1 N010 N012 0.1
+R4 0 N007 1k5
+R5 NC_01 N009 50k
+C4 N012 N013 8000m IC=24
+D2 N009 N010 RB050LAM-40
+.model D D
+.lib C:\Users\karab\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\karab\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 100m 0 startup
+.options gmin=1e-10
+.options abstol=1e-10
+.options reltol=0.005
+.options cshunt=1e-15
+.lib LTC3854.sub
+.backanno
+.end
