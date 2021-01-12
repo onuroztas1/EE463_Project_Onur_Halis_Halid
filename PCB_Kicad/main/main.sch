@@ -39,7 +39,7 @@ Wire Wire Line
 	6850 850  7100 850 
 Connection ~ 7100 850 
 Wire Wire Line
-	7100 850  7550 850 
+	7100 850  7500 850 
 Wire Wire Line
 	7100 850  7100 1050
 $Comp
@@ -56,8 +56,6 @@ $EndComp
 Wire Wire Line
 	9200 950  9200 850 
 Wire Wire Line
-	9200 850  7850 850 
-Wire Wire Line
 	9200 1050 9200 1200
 Text GLabel 9300 1200 2    50   Input ~ 0
 V_sense
@@ -69,17 +67,6 @@ V_Bat
 Wire Wire Line
 	9200 850  9200 800 
 Connection ~ 9200 850 
-$Comp
-L Device:D_Schottky D_out1
-U 1 1 6006BA40
-P 7700 850
-F 0 "D_out1" H 7700 633 50  0000 C CNN
-F 1 "D_Schottky" H 7700 724 50  0000 C CNN
-F 2 "Diode_SMD:D_SMB" H 7700 850 50  0001 C CNN
-F 3 "~" H 7700 850 50  0001 C CNN
-	1    7700 850 
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR0112
 U 1 1 600BDF05
@@ -507,4 +494,45 @@ Wire Wire Line
 	11000 3400 6200 3400
 Wire Wire Line
 	10450 1550 11000 1550
+$Comp
+L Device:C_Small C7
+U 1 1 5FFE17AF
+P 7500 1200
+F 0 "C7" H 7592 1246 50  0000 L CNN
+F 1 "4.7uF" H 7592 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_2225_5664Metric_Pad1.80x6.60mm_HandSolder" H 7500 1200 50  0001 C CNN
+F 3 "~" H 7500 1200 50  0001 C CNN
+	1    7500 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1100 7500 850 
+Connection ~ 7500 850 
+Wire Wire Line
+	7500 1300 7500 1700
+Wire Wire Line
+	7500 1700 7100 1700
+Wire Wire Line
+	7500 850  7950 850 
+Wire Wire Line
+	7950 1100 7950 850 
+Connection ~ 7950 850 
+Wire Wire Line
+	7950 1300 7950 1700
+Wire Wire Line
+	7950 1700 7500 1700
+Connection ~ 7500 1700
+$Comp
+L Device:C_Small C8
+U 1 1 5FFE1E1F
+P 7950 1200
+F 0 "C8" H 8042 1246 50  0000 L CNN
+F 1 "4.7uF" H 8042 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_2225_5664Metric_Pad1.80x6.60mm_HandSolder" H 7950 1200 50  0001 C CNN
+F 3 "~" H 7950 1200 50  0001 C CNN
+	1    7950 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 850  9200 850 
 $EndSCHEMATC
