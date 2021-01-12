@@ -19,7 +19,7 @@ U 1 1 5FE402E8
 P 6700 850
 F 0 "L1" V 6519 850 50  0000 C CNN
 F 1 "100uH" V 6610 850 50  0000 C CNN
-F 2 "Inductor_THT:L_Radial_D14.2mm_P10.00mm_Neosid_SD14" H 6700 850 50  0001 C CNN
+F 2 "Inductor_SMD:L_Wuerth_HCM-1390" H 6700 850 50  0001 C CNN
 F 3 "~" H 6700 850 50  0001 C CNN
 	1    6700 850 
 	0    1    1    0   
@@ -329,12 +329,6 @@ Wire Wire Line
 	10550 2200 10550 2150
 Wire Wire Line
 	10550 2150 10450 2150
-Text GLabel 10550 1550 2    50   Input ~ 0
-+5V
-Wire Wire Line
-	10450 1550 10550 1550
-Text GLabel 6500 3400 2    50   Input ~ 0
-+5V
 $Comp
 L power:GND #PWR0102
 U 1 1 5FEB8610
@@ -348,8 +342,6 @@ F 3 "" H 6450 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6450 3650 6450 3600
-Wire Wire Line
-	6200 3400 6500 3400
 Wire Wire Line
 	6200 3100 6300 3100
 Wire Wire Line
@@ -368,10 +360,6 @@ Text GLabel 6500 3300 2    50   Input ~ 0
 V_Bat
 Wire Wire Line
 	6500 3300 6200 3300
-Text GLabel 6500 3500 2    50   Input ~ 0
-BG
-Wire Wire Line
-	6200 3500 6500 3500
 Text GLabel 3300 3500 0    50   Input ~ 0
 SW
 Wire Wire Line
@@ -384,12 +372,6 @@ Text GLabel 5750 1200 3    50   Input ~ 0
 TG
 Wire Wire Line
 	5750 1150 5750 1200
-Text GLabel 6400 1600 0    50   Input ~ 0
-Bg
-Wire Wire Line
-	6400 1600 6450 1600
-Wire Wire Line
-	6450 1600 6450 1550
 Text GLabel 6100 1250 3    50   Input ~ 0
 SW
 Text GLabel 10550 1850 2    50   Input ~ 0
@@ -513,4 +495,16 @@ Wire Wire Line
 Connection ~ 4200 1700
 Wire Wire Line
 	4200 1700 6750 1700
+Wire Wire Line
+	6200 3500 6950 3500
+Wire Wire Line
+	6950 3500 6950 1550
+Wire Wire Line
+	6950 1550 6450 1550
+Wire Wire Line
+	11000 1550 11000 3400
+Wire Wire Line
+	11000 3400 6200 3400
+Wire Wire Line
+	10450 1550 11000 1550
 $EndSCHEMATC
