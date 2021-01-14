@@ -20,8 +20,8 @@
 ****************************************************************
 ****************************************************************
 
- Total number of nodes                      =    372804
- Total number of elements                   =    234884
+ Total number of nodes                      =    369943
+ Total number of elements                   =    232762
 
  First order elements
  Using PCG Solver
@@ -36,8 +36,8 @@ Nodal temperature results at time step =     1     (Time =     0.00000    )
  ================================================================================================
 
 
-   Tmax  =  331.36041    
-   Tmin  =  303.91296    
+   Tmax  =  324.32003    
+   Tmin  =  298.14999    
 
 
 
@@ -49,27 +49,27 @@ Nodal Gradient and Heat Flux at time step =     1  (Time =  0.0000000    )
 
  Minimum/Maximum Temperature Gradient and Heat Flux
 
- Node          32835           34948           54693           39792           33803           46089
- Min.     -1329.1161      -1148.2909      -850.27198      -247991.70      -267139.13      -289141.35    
- Node          39792           33803           46089           32835           34948           54693
- Max.      1239.9585       1335.6956       1445.7067       265823.21       229658.17       170054.40    
+ Node         213469          195934          195934          220513          214971          195931
+ Min.     -300.20890      -741.11395      -228.18888      -63936.420      -51897.399      -66593.780    
+ Node         220513          214971          195931          213469          195934          195934
+ Max.      319.68210       259.48700       332.96890       60041.780       148222.79       45637.777    
 
 
 Nodal Heat Balance at time step =     1    (Time =  0.0000000    )
 --------------------------------------------------------------------------------
     Node     Applied      Conduction      Convection       Radiation        Reaction   Sys. Internal         Balance
- Input     2.5757355      7.86017882E-10   0.0000000       0.0000000       0.0000000       0.0000000       2.5753209    
- Output  -1.21715793E-03 -7.30850436E-10  -2.5745183       0.0000000       0.0000000       0.0000000      -2.5753209    
+ Input    0.44926339      7.65748418E-10  9.57915191E-11   0.0000000       0.0000000       0.0000000      0.44918770    
+ Output  -2.15899568E-04 -6.95677236E-10 -0.44904749       0.0000000       0.0000000       0.0000000     -0.44918770    
 
- Total Heating applied to the system      =  2.5745183    
- Heat convected from system to environment=  2.5745183    
- System heat balance=                     = 2.22847518E-10
+ Total Heating applied to the system      = 0.44904749    
+ Heat convected from system to environment= 0.44904749    
+ System heat balance=                     = 2.07637407E-10
 
 Solution Time log
 --------------------------------------------------------------------------------
   Input phase                                     =          1.0
-  Assemblage of matrices                          =         11.0
-  Preconditioning of conductivity matrix          =         17.8
+  Assemblage of matrices                          =         12.2
+  Preconditioning of conductivity matrix          =         20.3
   Solution of equations                           =          1.6
-  Miscellaneous calculations                      =          0.6
-  Total Solution Time                             =         32.0
+  Miscellaneous calculations                      =          0.9
+  Total Solution Time                             =         36.0
