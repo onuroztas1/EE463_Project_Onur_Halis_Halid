@@ -56,8 +56,6 @@ $EndComp
 Wire Wire Line
 	9200 950  9200 850 
 Wire Wire Line
-	9200 850  8550 850 
-Wire Wire Line
 	9200 1050 9200 1200
 Text GLabel 9300 1200 2    50   Input ~ 0
 V_sense
@@ -69,17 +67,6 @@ V_Bat
 Wire Wire Line
 	9200 850  9200 800 
 Connection ~ 9200 850 
-$Comp
-L Device:D_Schottky D_out1
-U 1 1 6006BA40
-P 8400 850
-F 0 "D_out1" H 8400 633 50  0000 C CNN
-F 1 "D_Schottky" H 8400 724 50  0000 C CNN
-F 2 "Diode_SMD:D_SMB" H 8400 850 50  0001 C CNN
-F 3 "~" H 8400 850 50  0001 C CNN
-	1    8400 850 
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR0112
 U 1 1 600BDF05
@@ -260,8 +247,6 @@ F 3 "~" H 6450 1350 50  0001 C CNN
 	1    6450 1350
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3650 1700 4200 1700
 Wire Wire Line
 	5950 850  6100 850 
 Wire Wire Line
@@ -472,29 +457,6 @@ Wire Wire Line
 Connection ~ 3400 4200
 Wire Wire Line
 	3400 4200 3050 4200
-$Comp
-L Device:C_Small C6
-U 1 1 5FF1C9C9
-P 4200 1250
-F 0 "C6" H 4292 1296 50  0000 L CNN
-F 1 "68uF" H 4292 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 4200 1250 50  0001 C CNN
-F 3 "~" H 4200 1250 50  0001 C CNN
-	1    4200 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 1150 4200 850 
-Wire Wire Line
-	3650 850  4200 850 
-Connection ~ 4200 850 
-Wire Wire Line
-	4200 850  5550 850 
-Wire Wire Line
-	4200 1350 4200 1700
-Connection ~ 4200 1700
-Wire Wire Line
-	4200 1700 6750 1700
 Wire Wire Line
 	6200 3500 6950 3500
 Wire Wire Line
@@ -531,8 +493,6 @@ Wire Wire Line
 	7950 1100 7950 850 
 Connection ~ 7950 850 
 Wire Wire Line
-	7950 850  8250 850 
-Wire Wire Line
 	7950 1300 7950 1700
 Wire Wire Line
 	7950 1700 7500 1700
@@ -548,4 +508,10 @@ F 3 "~" H 7950 1200 50  0001 C CNN
 	1    7950 1200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7950 850  9200 850 
+Wire Wire Line
+	3650 850  5550 850 
+Wire Wire Line
+	3650 1700 6750 1700
 $EndSCHEMATC
